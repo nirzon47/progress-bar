@@ -43,6 +43,13 @@ const App = () => {
 					? `Progress: ${progress.toFixed(0)}%`
 					: 'Loading Complete!'}
 			</p>
+			<button
+				className='btn btn-primary w-1/2 mx-auto'
+				onClick={() => setProgress(0)}
+				type='button'
+			>
+				Reset
+			</button>
 		</div>
 	)
 }
